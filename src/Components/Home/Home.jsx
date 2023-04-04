@@ -25,7 +25,7 @@ function Home() {
     setShowModal(true);
   };
 
-  const apiURL = "https://oportfolio.onrender.com/info";
+  const apiURL = "https://client-backend.onrender.com/info";
 
   const fetchallData = async () => {
     try {
@@ -56,10 +56,10 @@ function Home() {
                   <div className="box-img-home">
                     <img
                       className="img-home"
-                      src={`https://oportfolio.onrender.com/${info.info_image}`}
+                      src={`https://client-backend.onrender.com/${info.info_image}`}
                       alt="img"
                       onClick={() =>
-                        handleOpen(`https://oportfolio.onrender.com/${info.info_image}`)
+                        handleOpen(`https://client-backend.onrender.com/${info.info_image}`)
                       }
                     />
 
@@ -165,10 +165,10 @@ function Home() {
                   <div className="box-img-home">
                     <img
                       className="img-home"
-                      src={`https://oportfolio.onrender.com/${info.info_image}`}
+                      src={`https://client-backend.onrender.com/${info.info_image}`}
                       alt="img"
                       onClick={() =>
-                        handleOpen(`https://oportfolio.onrender.com/${info.info_image}`)
+                        handleOpen(`https://client-backend.onrender.com/${info.info_image}`)
                       }
                     />
                     {showModal && (
@@ -210,10 +210,10 @@ function Home() {
                   <div className="box-img-home">
                     <img
                       className="img-home"
-                      src={`https://oportfolio.onrender.com/${info.info_image}`}
+                      src={`https://client-backend.onrender.com/${info.info_image}`}
                       alt="img"
                       onClick={() =>
-                        handleOpen(`https://oportfolio.onrender.com/${info.info_image}`)
+                        handleOpen(`https://client-backend.onrender.com/${info.info_image}`)
                       }
                     />
                     {showModal && (
@@ -250,10 +250,10 @@ function Home() {
                 <div className="row2">
                   <img
                     className="gglimeg"
-                    src={`https://oportfolio.onrender.com/${info.info_image}`}
+                    src={`https://client-backend.onrender.com/${info.info_image}`}
                     alt="img"
                     onClick={() =>
-                      handleOpen(`https://oportfolio.onrender.com/${info.info_image}`)
+                      handleOpen(`https://client-backend.onrender.com/${info.info_image}`)
                     }
                   />
                   {showModal && (

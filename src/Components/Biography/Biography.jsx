@@ -9,7 +9,7 @@ function Biography() {
 
   const [alldata, setAllData] = useState([]);
 
-  const apiURL = 'https://oportfolio.onrender.com/info';
+  const apiURL = 'https://client-backend.onrender.com/info';
 
 
   const fetchallData = async () => {

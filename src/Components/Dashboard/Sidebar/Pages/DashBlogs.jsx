@@ -31,7 +31,7 @@ function DashBlogs() {
 
     //   console.table(formData);
     await axios.post(
-      `https://oportfolio.onrender.com/blog/postblog`,
+      `https://client-backend.onrender.com/blog/postblog`,
       formData,
       {
         headers: {
@@ -52,14 +52,14 @@ function DashBlogs() {
 
   const loadUsers = async () => {
     const result = await axios.get(
-      "https://oportfolio.onrender.com/blog/getblog"
+      "https://client-backend.onrender.com/blog/getblog"
     );
     console.log(result.data);
     setUsers(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`https://oportfolio.onrender.com/blog/deleteblog/${id}`);
+    await axios.delete(`https://client-backend.onrender.com/blog/deleteblog/${id}`);
     toast.success("Deleted Successfully", 2000);
     loadUsers();
   };
@@ -77,7 +77,7 @@ function DashBlogs() {
     formData.append("comment", selectedInfo.comment);
 
     await axios.put(
-      `https://oportfolio.onrender.com/blog/updateblog/${selectedInfo._id}`,
+      `https://client-backend.onrender.com/blog/updateblog/${selectedInfo._id}`,
       formData,
       {
         headers: {

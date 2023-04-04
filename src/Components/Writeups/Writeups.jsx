@@ -23,7 +23,7 @@ function Writeups() {
     setShowModal(true);
   };
 
-  const apiURL = 'https://oportfolio.onrender.com/info';
+  const apiURL = 'https://client-backend.onrender.com/info';
 
 
   const fetchallData = async () => {
@@ -50,8 +50,8 @@ function Writeups() {
 <div key={info._id}>
     <div className="row2">
         
-    <img className="gglimeg" src={`https://oportfolio.onrender.com/${info.info_image}`} alt="img"
-    onClick={() => handleOpen(`https://oportfolio.onrender.com/${info.info_image}`)}/>
+    <img className="gglimeg" src={`https://client-backend.onrender.com/${info.info_image}`} alt="img"
+    onClick={() => handleOpen(`https://client-backend.onrender.com/${info.info_image}`)}/>
         {showModal && (
               <div className="modal-container" onClick={handleClose}>
                 <div className="modal-write">

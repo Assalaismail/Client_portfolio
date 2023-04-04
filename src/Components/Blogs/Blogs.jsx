@@ -23,7 +23,7 @@ function Blogs() {
     loadBlogs();
   }, []);
   const loadBlogs = async () => {
-    const res = await axios.get("https://oportfolio.onrender.com/blog/getblog");
+    const res = await axios.get("https://client-backend.onrender.com/blog/getblog");
 
     console.log(res.data);
     setblog(res.data);
@@ -43,7 +43,7 @@ function Blogs() {
                     <div className="row" key={index}>
                       <img
                         className="img"
-                        src={`https://oportfolio.onrender.com/blog/getblog/${item.image}`}
+                        src={`https://client-backend.onrender.com/blog/getblog/${item.image}`}
                         alt="img"
                       />
                       <br />

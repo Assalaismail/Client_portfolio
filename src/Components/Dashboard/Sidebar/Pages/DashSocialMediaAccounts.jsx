@@ -29,7 +29,7 @@ function DashSocialAccounts() {
     formData.append("info_image", infoImage);
     formData.append("info_category", newInfo.info_category);
   
-    await axios.post(`https://oportfolio.onrender.com/info`, formData, {
+    await axios.post(`https://client-backend.onrender.com/info`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -46,13 +46,13 @@ function DashSocialAccounts() {
   };
   
   const loadUsers = async () => {
-    const result = await axios.get("https://oportfolio.onrender.com/info");
+    const result = await axios.get("https://client-backend.onrender.com/info");
     console.log(result.data);
     setUsers(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`https://oportfolio.onrender.com/info/${id}`);
+    await axios.delete(`https://client-backend.onrender.com/info/${id}`);
     toast.success("Deleted Successfully", 2000);
     loadUsers();
   };
@@ -70,7 +70,7 @@ function DashSocialAccounts() {
     formData.append("info_category", selectedInfo.info_category);
   
     await axios.put(
-      `https://oportfolio.onrender.com/info/${selectedInfo._id}`,
+      `https://client-backend.onrender.com/info/${selectedInfo._id}`,
       formData,
       {
         headers: {
